@@ -1,0 +1,20 @@
+- content_for :page_title, 'Sign Up'
+
+h1 Create an Account
+
+= form_for :user do |f|
+  p
+    = f.label 'Name'
+    = f.text_field 'name'
+
+  p
+    = f.label 'Email'
+    = f.email_field 'email'
+
+  p
+    = f.label 'Password'
+    = f.password_field 'password'
+
+  p
+    = f.label 'Confirm Password'
+    = f.password_field 'password_confirmation'
